@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div class="flex">
-    <Sidebar></Sidebar>
+    <Sidebar class="w-1/6"></Sidebar>
     <router-view class="w-5/6" />
   </div>
 </template>

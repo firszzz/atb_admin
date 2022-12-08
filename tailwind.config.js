@@ -1,6 +1,8 @@
+const colors = require('tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ["./public/**/*.html", "./src/**/*.{vue,js,ts,jsx,tsx}", "./node_modules/flowbite/**/*.js"],
   presets: [],
   darkMode: "media", // or 'class'
   theme: {
@@ -40,6 +42,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      'bg-color': '#e3e3e3',
     }),
     columns: {
       auto: "auto",
@@ -980,6 +983,7 @@ module.exports = {
     "disabled",
   ],
   plugins: [
+    require('flowbite/plugin'),
     require('@tailwindcss/forms'),
   ],
 };

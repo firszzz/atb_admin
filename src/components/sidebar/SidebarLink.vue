@@ -17,7 +17,7 @@ export default {
 <template>
     <router-link :to="to" :class="{ active: isActive }">
         <transition name="fade">
-          <a v-if="!collapsed" href="#" class="flex gap-2 py-3 px-10 hover:bg-orange-500 hover:text-white font-medium">
+          <a v-if="!collapsed" href="#" class="flex gap-2 py-3 px-10 hover:bg-orange-500 focus:bg-orange-500 focus:text-white hover:text-white font-medium">
               <slot />
           </a>
         </transition>
